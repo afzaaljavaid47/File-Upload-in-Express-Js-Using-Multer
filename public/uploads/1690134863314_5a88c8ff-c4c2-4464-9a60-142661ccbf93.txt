@@ -1,0 +1,15 @@
+Today
+AG PROD Issues
+PAG-453
+PAG-406
+
+Delmonte PROD issue
+PDM-166
+
+AG CR#11
+PAG-452
+
+856_Out_AcademySports = 5 hours set
+
+856 duplicate transactions
+CSP - EDI Issues related to 856s / Handling unit already in existence

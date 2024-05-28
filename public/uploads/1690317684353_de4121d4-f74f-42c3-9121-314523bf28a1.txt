@@ -1,0 +1,19 @@
+Today
+AG
+DBU-8083
+PAG-458
+PAG-452
+
+Delmonte PROD issue
+PDM-166
+PDM-165
+PDM-163
+
+856 AcademySports = 4 hours set
+856 duplicate transactions
+CSP - EDI Issues related to 856s / Handling unit already in existence
+
+
+Exception while executing function: FUNC_Http_Receive Method not found: 'Int32 VSI.CloudPlatform.Model.PartnerShip.get_Transaction_Set_Id()'.
+WEBJ_EXPORT_AG_D365_Http_Receive_4_HDSOCHANGE_AG_870_CHANGE_HDSO_456b3348-715d-4335-a2b1-2efa28e2a7d5
+Exception while executing function: FUNC_Http_Receive Method not found: 'Int32 VSI.CloudPlatform.Model.PartnerShip.get_Transaction_Set_Id()'.

@@ -1,0 +1,31 @@
+{{>header}}
+
+<div class="container mt-5">
+    <div class="row">
+        {{#each files}}
+        <div class="col-md-4">
+            <div class="card mb-3">
+                {{#ifCond this.fileExtension '.txt'}}
+                    <img height="250px" src="./images/txt.jpg" class="card-img-top" alt="{{this.fileTitle}}">
+                    {{else}}
+                    <img height="250px" src="./uploads/{{this.fileName}}" class="card-img-top" alt="{{this.fileTitle}}">
+                {{/ifCond}}
+
+                <div class="card-body">
+                        <h5 class="card-title">{{this.fileTitle}}</h5>
+                        <p>Uploaded on {{dateFormat this.uploadedDateTime "MM-DD-YYYY, h:mm:ss a"}}</p>
+                        <div class="d-flex justify-content-between">
+                            <a href="/files/download/{{this.fileName}}" class="btn btn-primary">Download</a>
+                            <div>
+                                <a href="/files/edit/{{this._id}}" class="btn btn-primary">Edit</a>&nbsp;
+                                <a href="/files/delete/{{this._id}}" class="btn btn-danger">Delete</a>
+                            </div>
+                        </div>
+                </div>
+            </div>
+        </div>
+         {{/each}}
+    </div>
+</div>
+
+{{>footer}}

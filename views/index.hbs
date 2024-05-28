@@ -1,0 +1,23 @@
+{{>header}}
+<div class="container-fluid d-flex justify-content-center mt-5">
+<form method="POST" action="/" enctype="multipart/form-data" class="w-50">
+    <div class="form-group mb-3">
+        <label for="fileTitle" class="form-label">File Title</label>
+        <input type="text" required placeholder="Enter file title" id="fileTitle" class="form-control" name="fileTitle"/>
+    </div>
+    <div class="form-group mb-3">
+        <label for="fileName" class="form-label">Select File</label>
+        <input type="file" required id="fileName" placeholder="Select File" class="form-control" name="fileName"/>
+    </div>
+    <div class="d-grid">
+        <button type="submit" class="btn btn-primary">Upload</button>
+    </div>
+    {{#if success}}  
+        <p class="mt-3 text-center text-success">{{success}}</p>                    
+    {{/if}}
+    {{#if error}}  
+        <p class="mt-3 text-center text-danger">{{error}}</p>                    
+    {{/if}}
+</form>
+</div>
+{{>footer}}
